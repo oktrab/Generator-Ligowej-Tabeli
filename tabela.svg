@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     role="img" aria-label="Tabela ligowa — 12 drużyn (herby + punkty)">
+
+  <defs>
+    <style>
+      .cell   { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size: 24px; fill: #0f172a; }
+      .points { font-weight: 800; }
+      .logoBg { fill: #eef2f7; stroke: #cbd5e1; }
+      /* Wyróżnienia */
+      .hl-gold   { fill: #fef9c3; }   /* 1 miejsce */
+      .hl-silver { fill: #e5e7eb; }   /* 2 miejsce */
+      .hl-bronze { fill: #fde68a; }   /* 3 miejsce */
+      .hl-drop   { fill: #fee2e2; }   /* 11–12 */
+      .stripe-gold   { fill: #f59e0b; }
+      .stripe-silver { fill: #94a3b8; }
+      .stripe-bronze { fill: #b45309; }
+      .stripe-drop   { fill: #ef4444; }
+    </style>
+  </defs>
+
+  <!-- Tło -->
+  <rect width="1920" height="1080" fill="#f8fafc"/>
+
+  <!-- Tabela (większa) -->
+  <g id="table">
+    <!-- Kontener: 12 wierszy × 80px = 960px -->
+    <rect x="100" y="60" width="1720" height="960" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+
+    <!-- Zebra (tło wierszy) -->
+    <rect x="100" y="60"  width="1720" height="80" fill="#ffffff"/>
+    <rect x="100" y="140" width="1720" height="80" fill="#f8fafc"/>
+    <rect x="100" y="220" width="1720" height="80" fill="#ffffff"/>
+    <rect x="100" y="300" width="1720" height="80" fill="#f8fafc"/>
+    <rect x="100" y="380" width="1720" height="80" fill="#ffffff"/>
+    <rect x="100" y="460" width="1720" height="80" fill="#f8fafc"/>
+    <rect x="100" y="540" width="1720" height="80" fill="#ffffff"/>
+    <rect x="100" y="620" width="1720" height="80" fill="#f8fafc"/>
+    <rect x="100" y="700" width="1720" height="80" fill="#ffffff"/>
+    <rect x="100" y="780" width="1720" height="80" fill="#f8fafc"/>
+    <rect x="100" y="860" width="1720" height="80" fill="#ffffff"/>
+    <rect x="100" y="940" width="1720" height="80" fill="#f8fafc"/>
+
+    <!-- Wyróżnienia (nad zebrą) -->
+    <rect x="100" y="60"  width="1720" height="80" class="hl-gold"/>
+    <rect x="100" y="140" width="1720" height="80" class="hl-silver"/>
+    <rect x="100" y="220" width="1720" height="80" class="hl-bronze"/>
+    <rect x="100" y="860" width="1720" height="80" class="hl-drop"/>
+    <rect x="100" y="940" width="1720" height="80" class="hl-drop"/>
+
+    <!-- Lewy pasek akcentu -->
+    <rect x="100" y="60"  width="10" height="80" class="stripe-gold"/>
+    <rect x="100" y="140" width="10" height="80" class="stripe-silver"/>
+    <rect x="100" y="220" width="10" height="80" class="stripe-bronze"/>
+    <rect x="100" y="860" width="10" height="80" class="stripe-drop"/>
+    <rect x="100" y="940" width="10" height="80" class="stripe-drop"/>
+
+    <!-- Separatory kolumn (przyciemnione) -->
+    <line x1="170" y1="60" x2="170" y2="1020" stroke="#bec3c4" stroke-width="2" stroke-linecap="round"/>
+    <line x1="1650" y1="60" x2="1650" y2="1020" stroke="#bec3c4" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Ustawienia pozycji -->
+    <!-- numer x=135; logo 72x72 na x=188; nazwa x=288; punkty x=1800 -->
+    <!-- środki wierszy: 100,180,260,340,420,500,580,660,740,820,900,980 -->
+
+    <!-- 1 -->
+    <text x="135" y="100" class="cell" text-anchor="middle" dominant-baseline="middle">1</text>
+    <rect x="188" y="64" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/zamiec-bor.png" xlink:href="herby/zamiec-bor.png" x="188" y="64" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="100" class="cell" text-anchor="start" dominant-baseline="middle">Zamieć Bór</text>
+    <text x="1800" y="100" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 2 -->
+    <text x="135" y="180" class="cell" text-anchor="middle" dominant-baseline="middle">2</text>
+    <rect x="188" y="144" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/zolci-przennow.png" xlink:href="herby/zolci-przennow.png" x="188" y="144" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="180" class="cell" text-anchor="start" dominant-baseline="middle">Żółci Przennów</text>
+    <text x="1800" y="180" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 3 -->
+    <text x="135" y="260" class="cell" text-anchor="middle" dominant-baseline="middle">3</text>
+    <rect x="188" y="224" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/biali-tatarow.png" xlink:href="herby/biali-tatarow.png" x="188" y="224" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="260" class="cell" text-anchor="start" dominant-baseline="middle">Biali Tatarów</text>
+    <text x="1800" y="260" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 4 -->
+    <text x="135" y="340" class="cell" text-anchor="middle" dominant-baseline="middle">4</text>
+    <rect x="188" y="304" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/brzozy-maly-baczow.png" xlink:href="herby/brzozy-maly-baczow.png" x="188" y="304" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="340" class="cell" text-anchor="start" dominant-baseline="middle">Brzozy Mały Baczów</text>
+    <text x="1800" y="340" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 5 -->
+    <text x="135" y="420" class="cell" text-anchor="middle" dominant-baseline="middle">5</text>
+    <rect x="188" y="384" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/czarni-baczow.png" xlink:href="herby/czarni-baczow.png" x="188" y="384" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="420" class="cell" text-anchor="start" dominant-baseline="middle">Czarni Baczów</text>
+    <text x="1800" y="420" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 6 -->
+    <text x="135" y="500" class="cell" text-anchor="middle" dominant-baseline="middle">6</text>
+    <rect x="188" y="464" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/dabniarka-vista.png" xlink:href="herby/dabniarka-vista.png" x="188" y="464" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="500" class="cell" text-anchor="start" dominant-baseline="middle">Dąbniarka Vista</text>
+    <text x="1800" y="500" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 7 -->
+    <text x="135" y="580" class="cell" text-anchor="middle" dominant-baseline="middle">7</text>
+    <rect x="188" y="544" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/garbarnia-baczow.png" xlink:href="herby/garbarnia-baczow.png" x="188" y="544" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="580" class="cell" text-anchor="start" dominant-baseline="middle">Garbarnia Baczów</text>
+    <text x="1800" y="580" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 8 -->
+    <text x="135" y="660" class="cell" text-anchor="middle" dominant-baseline="middle">8</text>
+    <rect x="188" y="624" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/olimpia-aavekaupunki.png" xlink:href="herby/olimpia-aavekaupunki.png" x="188" y="624" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="660" class="cell" text-anchor="start" dominant-baseline="middle">Olimpia Aavekaupunki</text>
+    <text x="1800" y="660" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 9 -->
+    <text x="135" y="740" class="cell" text-anchor="middle" dominant-baseline="middle">9</text>
+    <rect x="188" y="704" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/byki-tatarow.png" xlink:href="herby/byki-tatarow.png" x="188" y="704" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="740" class="cell" text-anchor="start" dominant-baseline="middle">Byki Tatarów</text>
+    <text x="1800" y="740" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 10 -->
+    <text x="135" y="820" class="cell" text-anchor="middle" dominant-baseline="middle">10</text>
+    <rect x="188" y="784" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/partizana-czarnolas.png" xlink:href="herby/partizana-czarnolas.png" x="188" y="784" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="820" class="cell" text-anchor="start" dominant-baseline="middle">Partizana Czarnolas</text>
+    <text x="1800" y="820" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 11 (spadek) -->
+    <text x="135" y="900" class="cell" text-anchor="middle" dominant-baseline="middle">11</text>
+    <rect x="188" y="864" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/poseidon-kings.png" xlink:href="herby/poseidon-kings.png" x="188" y="864" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="900" class="cell" text-anchor="start" dominant-baseline="middle">Poseidon Kings</text>
+    <text x="1800" y="900" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+
+    <!-- 12 (spadek) -->
+    <text x="135" y="980" class="cell" text-anchor="middle" dominant-baseline="middle">12</text>
+    <rect x="188" y="944" width="72" height="72" rx="12" class="logoBg"/>
+    <image href="herby/zam-trub.png" xlink:href="herby/zam-trub.png" x="188" y="944" width="72" height="72" preserveAspectRatio="xMidYMid meet"/>
+    <text x="288" y="980" class="cell" text-anchor="start" dominant-baseline="middle">ZAM Trub</text>
+    <text x="1800" y="980" class="cell points" text-anchor="end" dominant-baseline="middle">0</text>
+  </g>
+</svg>
